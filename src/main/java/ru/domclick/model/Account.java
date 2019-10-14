@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 @Entity
-@Check(constraints = "balance > 0")
+@Check(constraints = "balance >= 0")
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
